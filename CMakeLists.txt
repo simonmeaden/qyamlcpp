@@ -62,7 +62,9 @@ set(EXTRA_FILES
    )
 
 add_library(qyamlcpp INTERFACE)
-target_sources(qyamlcpp INTERFACE "$<BUILD_INTERFACE:${HEADER_FILES};${EXTRA_FILES}>")
+target_sources(qyamlcpp INTERFACE
+   "$<BUILD_INTERFACE:${HEADER_FILES};${EXTRA_FILES}>"
+   "$<INSTALL_INTERFACE:${HEADER_FILES};${EXTRA_FILES}")
 target_include_directories(qyamlcpp INTERFACE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/>)
 target_link_libraries(qyamlcpp INTERFACE yamlcpp Qt5::Core Qt5::Gui)
 
@@ -76,4 +78,9 @@ if(${TYPE_SAFE_BUILD_TEST_EXAMPLE} OR (CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_S
     enable_testing()
     add_subdirectory(examples/)
     add_subdirectory(test/)
+endif()
+
+option(TYPE_SAFE_BUILD_DOC "generate documentation" OFF)
+if(TYPE_SAFE_BUILD_DOC)
+    add_subdirectory(doc/)
 endif()

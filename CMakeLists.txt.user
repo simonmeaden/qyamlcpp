@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.12.4, 2020-07-18T16:29:44. -->
+<!-- Written by QtCreator 4.12.4, 2020-08-10T07:12:12. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -138,7 +138,7 @@
       <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
        <value type="QString">all</value>
       </valuelist>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">false</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
@@ -146,10 +146,18 @@
       <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
        <value type="QString">all</value>
       </valuelist>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">false</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
+     </valuemap>
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
+      <value type="QString" key="CMakeProjectManager.MakeStep.AdditionalArguments"></value>
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">install</value>
+      </valuelist>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
-     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">3</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
